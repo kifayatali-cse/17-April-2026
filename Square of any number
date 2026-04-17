@@ -1,13 +1,14 @@
 #include <stdio.h>
-int main(){
-int num,i;
-printf("Enter the number:");
 
-scanf("%d",&num);
-printf("Factors of the %d are: " ,num);
-for(i=1;i<=num;++i){
-    if(num%1==0){
-        printf("%d",i);
-    }
-}
+int main() {
+    float num, result;
+    
+    printf("Enter a number: ");
+    scanf("%f", &num);
+    
+    result = num * num;
+    
+    printf("Square: %f\n", result);
+    
+    return 0;
 }
